@@ -2,11 +2,11 @@ from datetime import datetime
 import os
 from PIL import Image
 
-def get_search_filename(search_type, limit):
-    filename = f"{search_type}_{limit}_{datetime.now().strftime('%Y-%m-%d_%H:%M:%S')}.json"
+def get_search_filename(search_type, limit, category):
+    filename = f"{search_type}_{limit}_{category}_{datetime.now().strftime('%Y-%m-%d_%H:%M:%S')}.json"
     return filename
 
-def get_texts(search):
+def get_titles(search):
     titles = []
     for post_id, post in search.items():
         titles.append(post["name"])

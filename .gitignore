@@ -2,3 +2,5 @@
 /env
 /images
 /searches
+/data
+/lib/__pycache__
